@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height:150px fixed;
+        width:1440px fixed;
+        padding: 14px 122px;
+        gap:20px;
+        list-style:none;    
+    }
+    .background{
+        background-color: #002147;
+        color : white;
+        font-size: 18px;
+
+    }
+    .header li a{
+        color: white;
+        text-decoration: none;
+    }
+    .logo {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+    }
+    .herosection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pill-title {
+            background-color:#002147;
+            color: white;
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 40px auto;
+            width:fit-content;}
+
+            .about-section {
+            display: flex;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+            gap: 120px;
+            padding: 0 60px;
+            }
+
+    .about.image {
+            flex-shrink: 0;
+    }
+    
+    .abouttext {
+            flex: 1;
+    }
+    
+    .abouttext h2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        font-style: italic;
+        color: #002147;
+    }
+    
+    .abouttext h2 span.red {
+        color: #FF0000;
+    }
+    
+    .abouttext h2 span.blue {
+        color: #0066CC;
+        text-decoration: underline;
+    }
+    .abouttext p{
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+    }
+    .ourcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin: 40px auto;
+        width: 90%;
+        max-width: 1400px;
+    }
+    .aimbox {
+        width: 300px;
+        height: 200px;
+        background-color: rgb(170, 176, 181);
+        border-radius: 12px;
+        flex-shrink: 0;
+    }
+    
+        .lyrics-box {
+            text-align: center;
+            color: #444;
+            line-height: 1.8;
+            margin-top: 20px;
+            font-size: 16px;
+            white-space: pre-line;
+        }
+        .overlay-text{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            text-align: center;
+            padding: 20px;
+            line-height: 2.2;
+            font-size: 22px;
+            white-space: pre-line;
+        }
+        .image-wrapper {
+            position: relative;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .image-wrapper img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+         .read-more {
+            background-color: #002147;
+            color:white ;
+            border: none;
+            padding: 10px 20px;
+             border-radius: 4px;
+             cursor: pointer;
+             font-weight: 600;}
+             .info-card{
+                background-colour: rgb(228, 217, 217);
+                width:320px;
+                height: 200px;
+                padding: 30px 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(74, 74, 74, 0.996);
+             }
+        .info-card:nth-child(2) {
+            width: 380px;
+            height: 240px;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 122px;
+            text-align: left;
+        }    
+        .footer-content {
+            display: flex;
+            gap: 80px;
+            margin-bottom: 40px;
+            justify-content: space-between;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-column h3,
+        .footer-column h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .footer-column p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .footer-column ul {
+            font-size: 14px;
+            line-height: 2;
+        }
+        
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-size: 14px;
+        }
+        
+        .footer-bottom .social-links {
+            display: flex;
+            gap: 30px;
+        }
+</style>
+<header>
+    <div>
+        <div class="header background">
+                <div class="logo">
+                    <img src="logo.png" alt="NCC Logo" style="width: 100%; height: 100%;">
+                    </div>
+                <nav>
+                    <ul class="header li a">
+
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Annual Report</a></li>
+                    </ul> 
+                </nav>
+                <div class="logo">
+                    <img src="roorkee.png" alt="NCC Logo" style="width: 75px; height: 75px;">
+
+                </div>
+
+            </div>
+    </div>
+    <div class="herosection">
+        <img src="kkpant.png" alt="kkpant standing with team ncc" style="width: 100%; height: 600px padding: 0px gap: 0px ; ">
+    </div>
+    <div class="pill-title">
+
+        <p>About Ncc IIT Roorkee</p>
+    </div>
+    <div class ="about-section">
+        <div class="about image">
+        <img src="caded.png" alt="NCC Image" style="width: 373px; height: 560px;">
+    </div>
+    <div class="abouttext">
+        <h2>Building leaders through discipline, <span class="red">unity</span>, and <span class="blue">service</span>.</h2>
+        <p> The National Cadet Corps (NCC) at IIT Roorkee functions under the 3 UK CTR Battalion, Roorkee Group.
+                    Our unit comprises dedicated cadets committed to fostering leadership.</p>
+        <p>Since its inception, NCC IIT Roorkee has played a pivotal role in shaping young minds through
+                    rigorous training, social service initiatives, and active participation in  camps and
+                    parades.</p>
+        <button class="read-more">Read More</button>
+
+        </div>
+    </div>
+        <div class="pill-title">
+         <p>Our Aim</p>
+        </div>
+        <div class="ourcontainer">
+            <div class="aimbox"></div>
+                <div class="aimbox"></div>
+                <div class="aimbox"></div>
+        </div>
+        <div class="pill-title">
+            <p>OurPledge </p>
+            </div>
+            <div style="margin:30px 0; margin-left: 122px; width:fit-content;">
+                <img src="logo.png" alt="NCC Logo" style="width:168px; height:250px">
+            </div>
+            <div class="image-wrapper">
+                <img src="Text background.png" alt="background" style="width: 100%; display: block;">
+                <div class="overlay-text">
+                    <p class=pill-title>Our Pledge</p>
+                        Hum Sab Bharatiya Hain, Hum Sab Bharatiya Hain
+                    Apni Manzil Ek Hai,
+                    Ha, Ha, Ha, Ek Hai,
+                    Ho, Ho, Ho, Ek Hai.
+                    Hum Sab Bharatiya Hain.
+
+                    Kashmir Ki Dharti Rani Hai,
+                    Sartaj Himalaya Hai,
+                    Saadiyon Se Humne Isko Apne Khoon Se Pala Hai
+                    Desh Ki Raksha Ki Khatir Hum Shamshir Utha Lenge,
+                    Hum Shamshir Utha Lenge.
+
+                    Bikhre Bikhre Taare Hain Hum Lekin Jhilmil Ek Hai,
+                    Ha, Ha, Ha, Ek Hai
+                    Hum Sab Bharatiya Hain.
+                    Mandir Gurudwaare Bhi Hain Yahan
+                    Aur Masjid Bhi Hai Yahan
+                    Girija Ka Hai Ghariyaal Kahin
+                    Mullah ki Kahin Hai Ajaan
+
+                    Ek Hee Apna Ram Hain, Ek hi Allah Taala Hai,
+                    Ek Hee Allah Taala Hain, Raang Birange Deepak Hain Hum,
+                    lekin Jagmag Ek Hai, Ha Ha Ha Ek Hai, Ho Ho Ho Ek Hai.
+                    Hum Sab Bharatiya Hain, Hum Sab Bharatiya Hain.
+                    </div>
+                </div>
+
+            </div>
+            <div class="pill-title">
+                <p>Recent Events & Announcement</p>
+            </div>
+
+            <div class="ourcontainer">
+                <div class="info-card"></div>
+                <div class="info-card"></div>
+                <div class="info-card"></div>
+            </div>
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                            <img src="logo.png" alt="NCC Logo" style="width: 40px; height: 40px;">
+                            <img src="roorkee.png" alt="IIT Roorkee Logo" style="width: 40px; height: 40px;">
+                        </div>
+                        <h3>NCC IIT Roorkee</h3>
+                        <p>NCC IIT Roorkee builds discipline, leadership, patriotism, and teamwork among students. It organizes parades and camps. It encourages courage, responsibility, and dedication toward serving the nation with pride and honor.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Important Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Annual Report</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>9319198434</li>
+                            <li>ncc@iitr.ac.in</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Address</h4>
+                        <ul>
+                            <li>10 UK Bn NCC, IIT Roorkee,</li>
+                            <li>Roorkee, Haridwar</li>
+                            <li>Uttarakhand, 247667</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>All Rights Reseved</span>
+                    <div class="social-links">
+                        <span>Twitter</span>
+                        <span>Instagram</span>
+                        <span>Youtube</span>
+                    </div>
+                </div>
+            </div>
+        
+</header>
+<body>
+    
+</body>
+</html>
